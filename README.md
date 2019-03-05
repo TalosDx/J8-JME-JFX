@@ -17,15 +17,14 @@ http://opensource.org/licenses/BSD-3-Clause
 
 #### How to add the library to your project
 
-```groovy
-repositories {
-    maven {
-        url  "https://dl.bintray.com/javasabr/maven" 
-    }
-}
+```bash
+git clone https://github.com/TalosDx/JME3-JFX.git
+./gradlew build
+```
 
+```groovy
 dependencies {
-    compile 'com.jme3:jfx:2.0.0'
+    compile 'com.jme3:jfx:jre8-2.0.0'
 }
 ```
     

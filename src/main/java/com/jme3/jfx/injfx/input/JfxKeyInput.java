@@ -10,6 +10,7 @@ import javafx.scene.Node;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

@@ -11,6 +11,7 @@ import javafx.application.Platform;
 import javafx.scene.Node;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.image.ImageView;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Function;

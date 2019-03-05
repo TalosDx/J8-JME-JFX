@@ -10,6 +10,7 @@ import com.jme3.texture.Image;
 import com.jme3.util.BufferUtils;
 import javafx.scene.image.PixelFormat;
 import javafx.scene.image.PixelWriter;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

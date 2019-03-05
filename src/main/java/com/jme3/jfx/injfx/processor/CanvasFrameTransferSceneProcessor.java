@@ -7,6 +7,7 @@ import com.jme3.post.SceneProcessor;
 import com.jme3.texture.FrameBuffer;
 import javafx.scene.Node;
 import javafx.scene.canvas.Canvas;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 
 /**

@@ -15,6 +15,7 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.Region;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

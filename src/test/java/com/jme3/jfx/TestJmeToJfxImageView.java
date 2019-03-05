@@ -20,6 +20,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -103,6 +104,7 @@ public class TestJmeToJfxImageView extends Application {
 
             /** Use this listener for continuous events */
             private AnalogListener analogListener = new AnalogListener() {
+                @Override
                 public void onAnalog(String name, float value, float tpf) {
                     if (isRunning) {
                         if (name.equals("Rotate")) {

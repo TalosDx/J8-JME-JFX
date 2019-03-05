@@ -8,6 +8,7 @@ import com.jme3.opencl.Context;
 import com.jme3.renderer.Renderer;
 import com.jme3.system.*;
 import com.ss.rlib.common.util.ObjectUtils;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

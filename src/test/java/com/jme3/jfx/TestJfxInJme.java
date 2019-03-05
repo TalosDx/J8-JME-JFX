@@ -18,6 +18,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.paint.Color;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -114,6 +115,7 @@ public class TestJfxInJme extends SimpleApplication {
 
     /** Use this listener for continuous events */
     private AnalogListener analogListener = new AnalogListener() {
+        @Override
         public void onAnalog(String name, float value, float tpf) {
             if (isRunning) {
                 if (name.equals("Rotate")) {

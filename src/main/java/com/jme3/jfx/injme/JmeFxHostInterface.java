@@ -13,6 +13,7 @@ import com.sun.javafx.embed.AbstractEvents;
 import com.sun.javafx.embed.EmbeddedSceneInterface;
 import com.sun.javafx.embed.EmbeddedStageInterface;
 import com.sun.javafx.embed.HostInterface;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -92,7 +93,7 @@ public class JmeFxHostInterface implements HostInterface {
 
         var scaleFactor = container.getPixelScaleFactor();
 
-        sceneInterface.setPixelScaleFactors(scaleFactor, scaleFactor);
+        sceneInterface.setPixelScaleFactor(scaleFactor);
 
         final int width = container.getSceneWidth();
         final int height = container.getSceneHeight();

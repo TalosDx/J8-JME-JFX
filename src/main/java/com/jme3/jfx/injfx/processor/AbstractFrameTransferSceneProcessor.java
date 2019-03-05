@@ -17,6 +17,7 @@ import com.ss.rlib.common.logging.LoggerManager;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.scene.Node;
+import lombok.var;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -617,7 +618,7 @@ public abstract class AbstractFrameTransferSceneProcessor<T extends Node> implem
     }
 
     @Override
-    public void setProfiler(@NotNull AppProfiler profiler) {
+    public void setProfiler(AppProfiler profiler) {
     }
 
     @Override

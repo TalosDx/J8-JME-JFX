@@ -299,7 +299,7 @@ public class JmeFXInputListener implements RawInputListener {
         } else {
             return;
         }
-
+    
         if (inputManager.isCursorVisible() || event.isReleased()) {
             JfxPlatform.runInFxThread(() -> onMouseButtonEventImpl(x, y, button, type));
         }
@@ -331,9 +331,10 @@ public class JmeFXInputListener implements RawInputListener {
         final boolean alt = keyStateSet.get(KeyEvent.VK_ALT);
         final boolean meta = keyStateSet.get(KeyEvent.VK_META);
         final boolean popupTrigger = button == AbstractEvents.MOUSEEVENT_SECONDARY_BUTTON;
+    
 
         sceneInterface.mouseEvent(type, button, primaryBtnDown, middleBtnDown, secondaryBtnDown, x, y, screenX, screenY,
-                shift, ctrl, alt, meta, popupTrigger);
+                shift, ctrl, alt, meta, 0, popupTrigger);
     }
 
     @Override
@@ -371,7 +372,9 @@ public class JmeFXInputListener implements RawInputListener {
         final int wheelRotation = (int) Math.round(event.getDeltaWheel() / -120.0);
 
         if (wheelRotation != 0) {
-            type = AbstractEvents.MOUSEEVENT_VERTICAL_WHEEL;
+            //from javafx 10
+//            type = AbstractEvents.MOUSEEVENT_VERTICAL_WHEEL;
+            type = AbstractEvents.MOUSEEVENT_WHEEL;
             button = AbstractEvents.MOUSEEVENT_NONE_BUTTON;
         } else if (mouseButtonState[0]) {
             type = AbstractEvents.MOUSEEVENT_DRAGGED;
@@ -426,7 +429,7 @@ public class JmeFXInputListener implements RawInputListener {
         final boolean meta = keyStateSet.get(KeyEvent.VK_META);
 
         sceneInterface.mouseEvent(type, button, primaryBtnDown, middleBtnDown, secondaryBtnDown, x, y, screenX, screenY,
-                shift, ctrl, alt, meta, false);
+                shift, ctrl, alt, meta, wheelRotation, false);
     }
 
     @Override
