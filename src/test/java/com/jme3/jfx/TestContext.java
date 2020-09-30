@@ -15,7 +15,7 @@ public class TestContext  extends LwjglDisplay {
     protected static final Logger LOGGER = LoggerManager.getLogger(TestContext.class);
 
     /**
-     * Игровой поток рендера экрана.
+     * Game thread of render screen
      */
     private Thread thread;
 

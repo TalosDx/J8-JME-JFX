@@ -30,24 +30,7 @@ dependencies {
     
 #### Maven
 
-```xml
-<repositories>
-    <repository>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-        <id>bintray-javasabr-maven</id>
-        <name>bintray</name>
-        <url>https://dl.bintray.com/javasabr/maven</url>
-    </repository>
-</repositories>
-
-<dependency>
-    <groupId>com.jme3</groupId>
-    <artifactId>jfx</artifactId>
-    <version>2.0.0</version>
-</dependency>
-```
+work on it
 
 #### How to integrate jME application to JavaFX ImageView:
 
